@@ -22,15 +22,11 @@
         <StackPanel Grid.Column="0" Orientation="Vertical">
             <StackPanel Margin="15,0,0,0" Orientation="Vertical">
                 <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
-                    <TextBlock Margin="2.5,0,0,5" Text="LiveCaptions" />
+                    <TextBlock Margin="2.5,0,0,5" Text="实时字幕" />
                     <ui:Flyout x:Name="LiveCaptionsInfoFlyout">
                         <TextBlock Width="320" TextWrapping="Wrap">
-                            <Run Text="After Windows 11 version 24H2, you can only change the" />
-                            <Run FontWeight="Bold" Text="source language" />
-                            <Run Text="in LiveCaptions" />
-                            <Run Text="&#x0A;Note: Please click" />
-                            <Run FontWeight="Bold" Text="&quot;Hide&quot;" />
-                            <Run Text="to hide LiveCaptions instead of closing it directly." />
+                            <Run Text="Windows 11版本24H2之后，只能在【实时字幕】中更改源语言。" />
+                            <Run Text="&#x0A;注意:请单击“隐藏”以隐藏【实时字幕】，而不是直接关闭它。" />
                         </TextBlock>
                     </ui:Flyout>
                     <Button
@@ -50,19 +46,16 @@
                     Height="30"
                     Padding="11,4,11,4"
                     Click="Button_LiveCaptions">
-                    <TextBlock x:Name="ButtonText" Text="Show" />
+                    <TextBlock x:Name="ButtonText" Text="显示" />
                 </ui:Button>
             </StackPanel>
 
             <StackPanel Margin="15,10,0,0" Orientation="Vertical">
                 <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
-                    <TextBlock Margin="2.5,0,0,5" Text="API Interval" />
+                    <TextBlock Margin="2.5,0,0,5" Text="API 间隔时间" />
                     <ui:Flyout x:Name="FrequencyInfoFlyout">
                         <TextBlock Width="320" TextWrapping="Wrap">
-                            <Run Text="Determines the frequency of translate API calls. The smaller it is, the more frequent API calls." />
-                            <Run Text="&#x0A;The translate API is called once after the caption changes" />
-                            <Run FontWeight="SemiBold" Text="[API Interval]" />
-                            <Run Text="times" />
+                            <Run Text="翻译API调用的频率，值越小，API调用就越频繁。" />
                         </TextBlock>
                     </ui:Flyout>
                     <Button
@@ -91,7 +84,7 @@
 
         <StackPanel Grid.Column="1" Orientation="Vertical">
             <StackPanel Margin="15,0,0,0" Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Translate API" />
+                <TextBlock Margin="2.5,0,0,5" Text="翻译 API" />
                 <ComboBox
                     x:Name="translateAPIBox"
                     Width="150"
@@ -107,13 +100,13 @@
                     <TextBlock
                         Margin="2.5,0,0,5"
                         VerticalAlignment="Center"
-                        Text="Target Language" />
+                        Text="目标语言" />
                     <ui:Flyout x:Name="TargetLangInfoFlyout">
                         <TextBlock Width="300" TextWrapping="Wrap">
-                            <Run Text="You can directly edit to customize the language, and it is recommended to follow the" />
-                            <Run FontWeight="Bold" Text="BCP 47 language tag" />
-                            <Run Text="&#x0A;Note: Google translate might be failed to run if don't use BCP 47 language tag" />
-                            <Run Text="&#x0A;DeepL needs another way to define target language, see the docs" />
+                            <Run Text="您可以编辑自定义语言，建议遵循" />
+                            <Run FontWeight="Bold" Text="BCP47语言标签。" />
+                            <Run Text="&#x0A;注意:如果不使用BCP47语言标签，Google翻译可能无法运行。" />
+                            <Run Text="&#x0A;DeepL需要另一种方法来定义目标语言，请参阅文档。" />
                         </TextBlock>
                     </ui:Flyout>
                     <Button
@@ -140,7 +133,7 @@
 
         <StackPanel Grid.Column="2" Orientation="Vertical">
             <StackPanel Margin="15,0,0,0" Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Max Caption Log" />
+                <TextBlock Margin="2.5,0,0,5" Text="最大字幕日志" />
                 <ComboBox
                     Width="120"
                     Height="30"
@@ -159,15 +152,15 @@
             </StackPanel>
 
             <StackPanel Margin="15,10,0,0" Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Show Latency" />
+                <TextBlock Margin="2.5,0,0,5" Text="显示延迟时间" />
                 <ui:ToggleSwitch
                     Width="120"
                     Height="30"
                     Margin="0,0,0,0"
                     Padding="10,4,10,7"
                     IsChecked="{Binding MainWindow.LatencyShow, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                    OffContent="Off"
-                    OnContent="On" />
+                    OffContent="关"
+                    OnContent="开" />
             </StackPanel>
         </StackPanel>
 
@@ -186,7 +179,7 @@
                 Grid.Column="0"
                 Margin="15,0,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Model Name" />
+                <TextBlock Margin="2.5,0,0,5" Text="模型名称" />
                 <ui:TextBox
                     Width="130"
                     Height="30"
@@ -199,7 +192,7 @@
                 Grid.Column="0"
                 Margin="15,10,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Temperature" />
+                <TextBlock Margin="2.5,0,0,5" Text="温度" />
                 <ui:NumberBox
                     Width="130"
                     Height="30"
@@ -217,7 +210,7 @@
                 Grid.Column="1"
                 Margin="15,0,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="API Url" />
+                <TextBlock Margin="2.5,0,0,5" Text="API 链接" />
                 <ui:TextBox
                     Width="185"
                     Height="30"
@@ -230,7 +223,7 @@
                 Grid.Column="1"
                 Margin="15,10,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="API Key" />
+                <TextBlock Margin="2.5,0,0,5" Text="API 秘钥" />
                 <ui:TextBox
                     Width="185"
                     Height="30"
@@ -255,7 +248,7 @@
                 Grid.Column="0"
                 Margin="15,0,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Model Name" />
+                <TextBlock Margin="2.5,0,0,5" Text="模型名称" />
                 <ui:TextBox
                     Width="130"
                     Height="30"
@@ -268,7 +261,7 @@
                 Grid.Column="0"
                 Margin="15,10,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Temperature" />
+                <TextBlock Margin="2.5,0,0,5" Text="温度" />
                 <ui:NumberBox
                     Width="130"
                     Height="30"
@@ -286,7 +279,7 @@
                 Grid.Column="1"
                 Margin="15,0,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Port" />
+                <TextBlock Margin="2.5,0,0,5" Text="端口" />
                 <ui:NumberBox
                     Width="140"
                     Height="30"
@@ -314,7 +307,7 @@
                 Grid.Column="0"
                 Margin="15,0,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="API Url" />
+                <TextBlock Margin="2.5,0,0,5" Text="API 链接" />
                 <ui:TextBox
                     Width="130"
                     Height="30"
@@ -327,7 +320,7 @@
                 Grid.Column="0"
                 Margin="15,10,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="API Key" />
+                <TextBlock Margin="2.5,0,0,5" Text="API 秘钥" />
                 <ui:TextBox
                     Width="130"
                     Height="30"
@@ -352,7 +345,7 @@
                 Grid.Column="0"
                 Margin="15,0,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Model Name" />
+                <TextBlock Margin="2.5,0,0,5" Text="模型名称" />
                 <ui:TextBox
                     Width="130"
                     Height="30"
@@ -366,7 +359,7 @@
                 Grid.Column="0"
                 Margin="15,10,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="Temperature" />
+                <TextBlock Margin="2.5,0,0,5" Text="温度" />
                 <ui:NumberBox
                     Width="130"
                     Height="30"
@@ -384,7 +377,7 @@
                 Grid.Column="1"
                 Margin="15,0,0,0"
                 Orientation="Vertical">
-                <TextBlock Margin="2.5,0,0,5" Text="API Key" />
+                <TextBlock Margin="2.5,0,0,5" Text="API 秘钥" />
                 <ui:TextBox
                     Width="185"
                     Height="30"

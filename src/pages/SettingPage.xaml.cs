@@ -35,12 +35,12 @@ namespace LiveCaptionsTranslator
             if (isHide)
             {
                 LiveCaptionsHandler.RestoreLiveCaptions(App.Window);
-                ButtonText.Text = "Hide";
+                ButtonText.Text = "隐藏";
             }
             else
             {
                 LiveCaptionsHandler.HideLiveCaptions(App.Window);
-                ButtonText.Text = "Show";
+                ButtonText.Text = "显示";
             }
         }
 

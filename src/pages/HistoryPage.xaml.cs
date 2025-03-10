@@ -72,9 +72,9 @@ namespace LiveCaptionsTranslator
         {
             var dialog = new ContentDialog
             {
-                Title = "Do you want to delete all history?",
-                PrimaryButtonText = "Yes",
-                CloseButtonText = "No",
+                Title = "您想删除所有历史记录吗？",
+                PrimaryButtonText = "是",
+                CloseButtonText = "否",
                 DefaultButton = ContentDialogButton.Close,
                 DialogHost = (Application.Current.MainWindow as MainWindow)?.DialogHostContainer,
                 Padding = new Thickness(8, 4, 8, 8),

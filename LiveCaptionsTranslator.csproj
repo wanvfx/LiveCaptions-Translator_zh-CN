@@ -13,8 +13,8 @@
 		<SelfContained>false</SelfContained>
 		<IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
 
-		<Title>LiveCaptions Translator</Title>
-		<Description>A real-time speech translation tool based on Windows LiveCaptions.</Description>
+		<Title>实时字幕翻译器</Title>
+		<Description>基于 Windows LiveCaptions 的实时语音翻译工具。</Description>
 		<Authors>SakiRinn</Authors>
 		<ApplicationIcon>src\LiveCaptions.ico</ApplicationIcon>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>

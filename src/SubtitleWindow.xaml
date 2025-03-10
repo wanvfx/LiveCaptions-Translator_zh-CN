@@ -112,7 +112,7 @@
                         Cursor="Hand"
                         Icon="{ui:SymbolIcon fontIncrease20,
                                              Filled=False}"
-                        ToolTip="Font Increase" />
+                        ToolTip="字体增大" />
                     <ui:Button
                         x:Name="FontDecrease"
                         Background="#FFAAAAAA"
@@ -120,7 +120,7 @@
                         Cursor="Hand"
                         Icon="{ui:SymbolIcon fontDecrease20,
                                              Filled=False}"
-                        ToolTip="Font Decrease" />
+                        ToolTip="字体缩小" />
                     <ui:Button
                         x:Name="FontColorCycle"
                         Background="#FFAAAAAA"
@@ -128,7 +128,7 @@
                         Cursor="Hand"
                         Icon="{ui:SymbolIcon color16,
                                              Filled=False}"
-                        ToolTip="Font Color" />
+                        ToolTip="字体颜色" />
                     <ui:Button
                         x:Name="FontBold"
                         Background="#FFAAAAAA"
@@ -136,14 +136,14 @@
                         Cursor="Hand"
                         Icon="{ui:SymbolIcon textBold16,
                                              Filled=False}"
-                        ToolTip="Font Bold" />
+                        ToolTip="粗体" />
                     <ui:Button
                         x:Name="FontShadow"
                         Background="#FFAAAAAA"
                         Click="FontShadow_Click"
                         Icon="{ui:SymbolIcon squareShadow12,
                                              Filled=False}"
-                        ToolTip="Font Shadow" />
+                        ToolTip="阴影" />
                     <ui:Button
                         x:Name="OpacityIncrease"
                         Margin="5,0,0,0"
@@ -152,7 +152,7 @@
                         Cursor="Hand"
                         Icon="{ui:SymbolIcon arrowAutofitUp20,
                                              Filled=False}"
-                        ToolTip="Opacity Increase" />
+                        ToolTip="提高透明" />
                     <ui:Button
                         x:Name="OpacityDecrease"
                         Background="#FFAAAAAA"
@@ -160,7 +160,7 @@
                         Cursor="Hand"
                         Icon="{ui:SymbolIcon arrowAutofitDown20,
                                              Filled=False}"
-                        ToolTip="Opacity Decrease" />
+                        ToolTip="降低透明" />
                     <ui:Button
                         x:Name="BackgroundColorCycle"
                         Background="#FFAAAAAA"
@@ -168,7 +168,7 @@
                         Cursor="Hand"
                         Icon="{ui:SymbolIcon color16,
                                              Filled=False}"
-                        ToolTip="Background Color" />
+                        ToolTip="背景颜色" />
                     <ui:Button
                         x:Name="ClickThrough"
                         Margin="5,0,0,0"
@@ -177,7 +177,7 @@
                         Cursor="Hand"
                         Icon="{ui:SymbolIcon lockClosed16,
                                              Filled=False}"
-                        ToolTip="Click Through" />
+                        ToolTip="锁定" />
                 </StackPanel>
             </Grid>
         </Border>

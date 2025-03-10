@@ -60,10 +60,10 @@
                     Padding="10,4,10,7"
                     VerticalAlignment="Stretch"
                     SelectedIndex="1">
-                    <ComboBoxItem Content="20/page" Tag="20" />
-                    <ComboBoxItem Content="30/page" Tag="30" />
-                    <ComboBoxItem Content="50/page" Tag="50" />
-                    <ComboBoxItem Content="100/page" Tag="100" />
+                    <ComboBoxItem Content="20/页" Tag="20" />
+                    <ComboBoxItem Content="30/页" Tag="30" />
+                    <ComboBoxItem Content="50/页" Tag="50" />
+                    <ComboBoxItem Content="100/页" Tag="100" />
                 </ComboBox>
 
                 <ui:AutoSuggestBox
@@ -71,7 +71,7 @@
                     MinWidth="200"
                     MaxWidth="200"
                     Margin="5,0,0,0"
-                    PlaceholderText="Search"
+                    PlaceholderText="搜索"
                     QuerySubmitted="HistorySearchBox_QuerySubmitted"
                     TextChanged="HistorySearchBox_TextChanged" />
 
@@ -92,7 +92,7 @@
                     Icon="{ui:SymbolIcon ArrowDown12,
                                          Filled=False}"
                     MouseOverBackground="#07000000"
-                    ToolTip="Export" />
+                    ToolTip="导出" />
                 <ui:Button
                     x:Name="Delete"
                     Margin="5,0,0,0"
@@ -102,7 +102,7 @@
                     Icon="{ui:SymbolIcon Delete12,
                                          Filled=False}"
                     MouseOverBackground="#07000000"
-                    ToolTip="Delete All" />
+                    ToolTip="删除所有" />
 
                 <ui:Button
                     x:Name="Refresh"
@@ -113,7 +113,7 @@
                     Icon="{ui:SymbolIcon ArrowClockwise12,
                                          Filled=False}"
                     MouseOverBackground="#07000000"
-                    ToolTip="Refresh" />
+                    ToolTip="刷新" />
             </StackPanel>
         </Grid>
 
@@ -148,7 +148,7 @@
                 </LinearGradientBrush>
             </DataGrid.BorderBrush>
             <DataGrid.Columns>
-                <DataGridTemplateColumn Width="0.4*" Header="Time">
+                <DataGridTemplateColumn Width="0.4*" Header="时间码">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock
@@ -159,7 +159,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTemplateColumn Width="*" Header="Caption">
+                <DataGridTemplateColumn Width="*" Header="字幕">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding SourceText}" TextWrapping="Wrap" />
@@ -167,7 +167,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTemplateColumn Width="*" Header="Translated">
+                <DataGridTemplateColumn Width="*" Header="已翻译">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding TranslatedText}" TextWrapping="Wrap" />

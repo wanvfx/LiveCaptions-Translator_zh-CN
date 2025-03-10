@@ -34,7 +34,7 @@
                 Height="27"
                 ShowMaximize="False">
                 <ui:TitleBar.Header>
-                    <ui:TextBlock Padding="15,0,0,0" VerticalAlignment="Center">LiveCaptions Translator</ui:TextBlock>
+                    <ui:TextBlock Padding="15,0,0,0" VerticalAlignment="Center">实时字幕翻译器</ui:TextBlock>
                 </ui:TitleBar.Header>
                 <ui:TitleBar.TrailingContent>
                     <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
@@ -45,7 +45,7 @@
                             Click="CaptionLog_OnClickButton_Click"
                             Icon="{ui:SymbolIcon History24,
                                                  Filled=False}"
-                            ToolTip="Caption Log" />
+                            ToolTip="字幕日志" />
                         <ui:Button
                             x:Name="logOnly"
                             Margin="0,0,5,0"
@@ -53,7 +53,7 @@
                             Click="LogOnly_OnClickButton_Click"
                             Icon="{ui:SymbolIcon Pause16,
                                                  Filled=False}"
-                            ToolTip="Pause Translation" />
+                            ToolTip="暂停翻译" />
                         <ui:Button
                             x:Name="overlaySubtitleMode"
                             Margin="0,0,5,0"
@@ -61,7 +61,7 @@
                             Click="OverlaySubtitleModeButton_Click"
                             Icon="{ui:SymbolIcon WindowNew20,
                                                  Filled=False}"
-                            ToolTip="Overlay Translate Mode" />
+                            ToolTip="翻译叠加模式" />
                         <ui:Button
                             x:Name="topmost"
                             Margin="0,0,5,0"
@@ -69,7 +69,7 @@
                             Click="TopmostButton_Click"
                             Icon="{ui:SymbolIcon Pin16,
                                                  Filled=True}"
-                            ToolTip="Always On Top" />
+                            ToolTip="置顶" />
                     </StackPanel>
                 </ui:TitleBar.TrailingContent>
             </ui:TitleBar>
@@ -85,21 +85,21 @@
                 <ui:NavigationView.MenuItems>
                     <ui:NavigationViewItem
                         Margin="0,6,0,3"
-                        Content="Caption"
+                        Content="字幕"
                         FontFamily="Bahnschrift"
                         Icon="{ui:SymbolIcon Home24}"
                         NavigationCacheMode="Enabled"
                         TargetPageType="{x:Type local:CaptionPage}" />
                     <ui:NavigationViewItem
                         Margin="0,3,0,0"
-                        Content="Setting"
+                        Content="设置"
                         FontFamily="Bahnschrift"
                         Icon="{ui:SymbolIcon Settings24}"
                         NavigationCacheMode="Required"
                         TargetPageType="{x:Type local:SettingPage}" />
                     <ui:NavigationViewItem
                         Margin="0,3,0,0"
-                        Content="Prompt"
+                        Content="提示"
                         Cursor=""
                         FontFamily="Bahnschrift"
                         Icon="{ui:SymbolIcon Chat24}"
@@ -107,7 +107,7 @@
                         TargetPageType="{x:Type local:PromptSetting}" />
                     <ui:NavigationViewItem
                         Margin="0,3,0,0"
-                        Content="History"
+                        Content="历史"
                         FontFamily="Bahnschrift"
                         Icon="{ui:SymbolIcon History24}"
                         NavigationCacheMode="Disabled"
